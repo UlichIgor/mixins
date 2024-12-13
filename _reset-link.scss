@@ -1,0 +1,5 @@
+// Обнулення стилів a
+@mixin reset-link() {
+text-decoration: none;
+    color: inherit !important;
+}
