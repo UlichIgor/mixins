@@ -64,6 +64,9 @@
   grid-template-rows: repeat(4, calc(20vmin + 0.9375vw));
 }
 // 5. Розміри блоків:
-max-width: calc(1148px + 4.135417vh);
-min-height: calc(165px + 20.015625vw);
+.block {
+  width: calc(1148px + 4.135417vh);
+  height: calc(165px + 20.015625vw);
+}
+
 
