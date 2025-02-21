@@ -1,5 +1,5 @@
-// Обнулення стилів a
-@mixin reset-link() {
-text-decoration: none;
-    color: inherit !important;
+// Обнулення стилів a з можливістю налаштування кольору та текстового декору//
+@mixin reset-link($color: inherit, $text-decoration: none) {
+  text-decoration: $text-decoration;
+  color: $color !important;
 }

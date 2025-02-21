@@ -1,8 +1,8 @@
-@mixin imgPosition() {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@mixin imgPosition($position: center, $repeat: no-repeat, $size: cover, $width: 100%, $height: auto) {
+  background-position: $position;
+  background-repeat: $repeat;
+  background-size: $size;
   display: block;
-  width: 100%;
-  height: auto;
+  width: $width;
+  height: $height;
 }

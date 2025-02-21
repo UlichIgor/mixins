@@ -1,7 +1,7 @@
-//обнуление стилей ul li
-@mixin reset-list() {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+//обнулення стилів ul li з можливістю налаштування відступів та стилю списку//
+@mixin reset-list($margin: 0, $padding: 0, $list-style: none) {
+  margin: $margin;
+  padding: $padding;
+  list-style: $list-style;
 }
 

@@ -1,7 +1,7 @@
-//кілька контейнерів, які будуть гнучким блоком, з дією обгортання та вирівнюванням дочірніх елементів по центру (як по горизонталі, так і по вертикалі).
-@mixin flex-container() {
+// Міксин для створення гнучкого контейнера з вирівнюванням дочірніх елементів по центру та обгортанням.
+@mixin flex-container($justify-content: space-between, $align-items: center, $flex-wrap: wrap) {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
 }

@@ -1,7 +1,9 @@
-//Просто та ефективно, коли вам потрібно активувати апаратне прискорення для деякої анімації, щоб усе було швидко, гладко та без мерехтіння.
-@mixin hardware($backface: true, $perspective: 1000) {
-  @if $backface {
+// Просто та ефективно, коли вам потрібно активувати апаратне прискорення для деякої анімації, щоб усе було швидко, гладко та без мерехтіння.
+@mixin hardware($backface: true, $perspective: 1000px) {
+  @if $backface == true {
     backface-visibility: hidden;
   }
-  perspective: $perspective;
+  @if $perspective != 0 {
+    perspective: $perspective;
+  }
 }
