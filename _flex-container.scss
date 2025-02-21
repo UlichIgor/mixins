@@ -1,7 +1,14 @@
 // Міксин для створення гнучкого контейнера з вирівнюванням дочірніх елементів по центру та обгортанням.
 @mixin flex-container($justify-content: space-between, $align-items: center, $flex-wrap: wrap) {
+  // Встановлює відображення елементів як гнучкий контейнер
   display: flex;
+  
+  // Вирівнює дочірні елементи по вертикалі
   align-items: $align-items;
+  
+  // Вирівнює дочірні елементи по горизонталі
   justify-content: $justify-content;
+  
+  // Встановлює обгортання дочірніх елементів
   flex-wrap: $flex-wrap;
 }
